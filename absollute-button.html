@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Absolute Button</title>
+
+    <style>
+        body{background-color: #333333;}
+h1{
+    color: white;
+}
+.btn-icon{   
+       background-color: #271881;
+        border: none;
+        color: white; 
+        padding: 28px;
+        position: relative;
+        cursor: pointer;
+        margin-top: 40px;
+                }
+
+.btn-icon img{ position: absolute;
+top: 0px;
+transform-origin: -150px 50%;
+z-index: -1;
+transition: 0.5s;
+opacity: 0;
+ }
+ .btn-icon:hover img{ 
+     right: -90px;
+     opacity: 1;
+     margin: 70px -70px 0px 0px;
+ }
+
+.btn-icon:hover a:nth-child(1) img{
+    transform: rotate(-50deg);
+
+}
+.btn-icon:hover a:nth-child(2) img{
+    transform: rotate(-25deg);
+    
+}
+.btn-icon:hover a:nth-child(3) img{
+    transform: rotate(0deg);
+   
+}
+.btn-icon:hover a:nth-child(4) img{
+    transform: rotate(25deg);
+  
+}
+.btn-icon:hover a:nth-child(5) img{
+    transform: rotate(50deg);
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Check it out</h1>
+    <button class="btn-icon">
+        Share it now!!!
+
+<a href=""> <img src="https://icons.iconarchive.com/icons/yootheme/social-bookmark/64/social-twitter-button-blue-icon.png" alt=""></a>
+<a href=""> <img src="https://icons.iconarchive.com/icons/designbolts/3d-social/64/Facebook-icon.png" alt=""></a>
+<a href=""><img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/64/vk-icon.png" alt=""></a>
+<a href=""><img src="https://icons.iconarchive.com/icons/designbolts/free-instagram/64/Active-Instagram-2-icon.png" alt=""></a>
+<a href=""><img src="https://icons.iconarchive.com/icons/wwalczyszyn/android-style-honeycomb/64/YouTube-icon.png" alt=""></a>
+
+    </button>
+</body>
+</html>
